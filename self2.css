@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Essentials/6522815_3305284-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    position: relative;
+}   
+.bar{
+    width: 100%;
+    background-color: rgba(163, 120, 2, 0.105);
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.listing{
+    list-style: none;
+    display: flex;
+    column-gap: 60px;
+    font-size: 19px;
+    font-weight: 490px;
+    font-family: Poppins;
+    font-weight: 400;
+    position: relative;
+    letter-spacing: 0px;
+    transition: 1s;
+}
+ul li{
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 0px;
+    transition: 0.7s;
+}
+ul li:hover{
+    letter-spacing: 3px;
+}
+ul li::after{
+    width: 0%;
+    height: 3px;
+    background-color: transparent;
+    position: absolute;
+    content: "";
+    top: 25px;
+    left: -5%;
+    transition: 0.8s;
+    border-radius: 20%;
+    border-style: solid;
+    border: none;
+    letter-spacing: 0;
+}
+ul li:hover::after{
+    background-color: rgba(255, 145, 0, 0.295);
+    width: 110%;
+}
+ul li::before{
+    width: 0%;
+    height: 3px;
+    background-color: transparent;
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: -5%;
+    transition: 0.8s;
+    border-radius: 20%;
+    border-style: solid;
+    border: none;
+}
+ul li:hover::before{
+    background-color: rgba(255, 145, 0, 0.384);
+    width: 110%;
+}
+
+.button button{
+    border: none;
+    border-radius: 50px;
+    width: 90px;
+    height: 35px;
+    background-color: black;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 230, 0);
+    text-wrap: pretty;
+    transition: 0.6s;
+}
+.button button:hover{
+    color: rgb(22, 16, 0);
+    background-color: rgba(255, 239, 197, 0.644);
+    width: 96px;
+    height: 40px;
+    font-size: 22px;
+    cursor: pointer;
+    text-wrap: pretty;
+}
+
+.mid{
+    width: 130px;
+    height: 40px;
+    background-color:rgba(247, 132, 1, 0.801);
+    border: 3px;
+    border-color: transparent;;
+    border-style: solid;
+    border-radius: 40px;
+    position: absolute;
+    justify-content: flex-end;
+    top: 63%;
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.788);
+    letter-spacing: 0px;
+    transition: 1s;
+    cursor: pointer;
+}
+.mid:hover{
+    background-color: rgb(255, 243, 218);
+    color: rgb(255, 136, 0);
+    letter-spacing: 5px;
+}
+.text{
+    position: absolute;
+    top: 46%;
+    font-family: Montserrat;
+    font-size: 34px;
+    color: rgba(255, 174, 1, 0.493);
+    font-weight: bolder;
+}
+.texti{
+    position:absolute;
+    top: 0%;
+    color:rgba(255, 147, 24, 0.493);
+    animation: texti 2s alternate infinite;
+}
+@keyframes texti{
+    from{
+         top: 0%;
+    }to{
+         top: 29%;
+    }
+}
+.textie{
+    position:absolute;
+    top: -29%;
+    color:rgba(255, 147, 24, 0.11);
+    animation: textie 2s alternate infinite;
+}
+@keyframes textie{
+    from{
+         top: 0%;
+    }to{
+         top: -29%;
+    }
+}
+.ul_li1{
+    background-color: transparent;
+    position: absolute;
+    padding: 15px 30px;
+    list-style: none;
+    top: 35%;
+    left: -20%;
+    font-size: 19px;
+    transition: 0.5s;
+    color: transparent;
+}
+
+.li1{
+    overflow: hidden;
+}
+.li1:hover{
+    overflow: visible;
+}
+.li1:hover .ul_li1{
+    top: 100%;
+    color: black;
+    background-color: rgba(163, 120, 2, 0.062);
+}
